@@ -1,33 +1,48 @@
-.App {
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('./images/js30.jpg');
+  background-position: center;
+}
+.header{
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+.main{
+  display: flex;
+}
+.navbar{
+  width: 200px;
+  height: 80vh;
+  margin: 30px 0 0 50px;
+}
+.days{
+  width: 100%;
+  height: 80vh;
+  /* background: white; */
+  margin: 30px 0px 0px 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.days__section{
+  width: 90%;
+  background: whitesmoke;
+  box-shadow: 0px 0px 10px 2px white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 960px){
+  .days{
+    margin: 0;
+    height: 85vh;
   }
-  to {
-    transform: rotate(360deg);
+  .days__section{
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
 }
