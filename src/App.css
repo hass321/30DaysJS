@@ -1,23 +1,23 @@
-body{
+body {
   margin: 0;
   padding: 0;
-  background-image: url('./images/js30.jpg');
+  background-image: url("./images/js30.jpg");
   background-position: center;
 }
-.header{
+.header {
   display: flex;
   width: 100%;
   height: 80px;
 }
-.main{
+.main {
   display: flex;
 }
-.navbar{
+.navbar {
   width: 200px;
   height: 80vh;
   margin: 30px 0 0 50px;
 }
-.days{
+.days {
   width: 100%;
   height: 80vh;
   /* background: white; */
@@ -25,24 +25,63 @@ body{
   display: flex;
   justify-content: flex-end;
 }
-.days__section{
+.days__section {
   width: 90%;
-  background: whitesmoke;
+  background: url("./images/drumKit-02.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: 0px 0px 10px 2px white;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   height: 100%;
   text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
-
-@media only screen and (max-width: 960px){
-  .days{
+.keys {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  /* background: black; */
+}
+.key{
+  width: 50px;
+  height: 50px;
+  background: rgba(0,0,0,0.5);
+  color: whitesmoke;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: cursive;
+  box-shadow: 0px 0px 10px 2px white;
+  text-shadow: 0px 0px 10px black;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.09s;
+}
+.playing{
+  transform: scale(1.1);
+  border: 4px solid #ffc600;
+  box-shadow: 0 0 10px #ffc600;
+}
+@media only screen and (max-width: 960px) {
+  .days {
     margin: 0;
     height: 85vh;
   }
-  .days__section{
+  .days__section {
     width: 100%;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
+  }
+  .key{
+    margin-left: 2px;
   }
 }

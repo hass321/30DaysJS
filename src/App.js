@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
 // custom components
-import Header from './components/Header/Header';
-import Navbar from './components/Navbar/Navbar';
-import Days from './components/Days/Days';
+import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
+import Days from "./components/Days/Days";
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
       <div>
         <Header />
         <div className="main">
-          {window.innerWidth > '960' && <Navbar />}
+          {window.innerWidth > "960" && <Navbar />}
           <Days />
         </div>
       </div>
