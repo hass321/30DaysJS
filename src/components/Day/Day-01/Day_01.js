@@ -1,4 +1,6 @@
 import React from "react";
+
+//sounds
 import clap from "../../../sounds/clap.wav";
 import hihat from "../../../sounds/hihat.wav";
 import kick from "../../../sounds/kick.wav";
@@ -38,7 +40,7 @@ export default class Day_01 extends React.Component {
 
     };
     return (
-      <div>
+      <div className="day01">
         <h1 style={{ color: "white" }}>Day - 01</h1>
         <div className="keys">
           <div className="key" data-key="65" onClick={clickHandle}>

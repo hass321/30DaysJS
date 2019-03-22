@@ -12,7 +12,7 @@ class App extends Component {
       <div>
         <Header />
         <div className="main">
-          {window.innerWidth > "960" && <Navbar />}
+        {window.innerWidth > "960" && <Navbar />}
           <Days />
         </div>
       </div>

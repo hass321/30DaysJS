@@ -1,0 +1,45 @@
+.day02 {
+  width: 90%;
+  background: url("../images/Day-02.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 10px 2px white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
+  text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+h2{
+  color: white;
+}
+.h1{
+  color: var(--base);
+  font-size: 28px;
+}
+.controls{
+  margin-bottom: 15px;
+}
+.day-2-img{
+  width: 500px;
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+.controls__label{
+  color:white;
+  font-size: 28px;
+  padding: 10px 15px 15px 10px;
+}
+input[type=color]{
+  position: relative;
+  bottom: 4px;
+}
+
+@media only screen and (max-width: 520px){
+  .day-2-img{
+    width: 350px;
+  }
+}
